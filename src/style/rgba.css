@@ -1,0 +1,66 @@
+/*RGBA*/
+
+.rgba {
+	width: 712px;
+	height: 260px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.rgba-container {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rgba-setting { width: 50%; }
+
+.rgba-option-container {
+	width: 300px;
+	font-size: 1.25rem;
+	font-family: 'Yeon Sung', cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 15px;
+}
+
+.rgba-option-container div {
+	width: 210px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.rgba-option-container p {
+	margin-left: 15px;
+}
+
+.rgba-figure-container {
+	width: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rgba-figure {
+	width: 175px;
+	height: 175px;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	background-color: #AC55D4;
+	border: 1px solid #000000;
+	border-radius: 50%;
+	margin-top: 10px;
+}
+
+.rgba-result {
+	width: 92%;
+	height: 55px;
+	margin-top: 20px;
+}
+
+.rgba-result button { width: 12.5%; }
+
+
+

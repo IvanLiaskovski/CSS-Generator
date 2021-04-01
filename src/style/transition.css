@@ -1,0 +1,135 @@
+/*Transition*/
+
+.transition {
+	width: 712px;
+	height: 270px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.transition-container {
+	width: 100%;
+	display: flex;
+}
+
+.transition-setting { width: 50%; }
+
+.transition-setting div {
+	width: 300px;
+	font-size: 1.25rem;
+	font-family: 'Yeon Sung', cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.transition-setting option, 
+.transition-setting select {
+	width: 115px;
+}
+
+.transition-setting input {
+	width: 98px;
+	padding: 5px;
+}
+
+.transition-hover-container {
+	width: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.transition-hover {
+	width: 150px;
+	height: 80px;
+	font-size: 1.25rem;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #AC55D4;
+	outline: 2px solid #000000;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.transition-result-container {
+	width: 100%;
+}
+
+.transition-result {
+	width: 92%;
+	height: 115px;
+	margin-top: 20px;
+}
+
+.transition-result > div {
+	max-width: 500px !important;
+	word-wrap: break-word;
+	overflow: hidden;
+}
+
+.transition-result button { width: 17%; }
+
+/*Animations*/
+
+@keyframes all {
+	from {
+		width: 150px;
+		height: 80px;
+		background-color: #ffffff;
+		outline: 2px solid #000000;
+		color: #ffffff;
+	}
+	to {
+		width: 250px;
+		height: 130px;
+		background: #AC55D4;
+		outline: 2px dashed #000000;
+		color: #ff0000;
+	}
+}
+
+
+@keyframes background {
+	from { background: #ffffff; }
+	to { background: #AC55D4; }
+}
+
+@keyframes color {
+	from{ color: #ffffff; }
+	to { color: red; }
+}
+
+@keyframes height {
+	from { height: 80px; }
+	to { height: 130px; }
+}
+
+@keyframes width {
+	from { width: 150px; }
+	to { width: 250px; }
+}
+
+@keyframes outline {
+	from {
+		outline: 2px solid #000000;
+	}
+	to {
+		outline: 2px dashed #000000;
+	}
+}
+
+
+
+
+
+
+
+
+
+

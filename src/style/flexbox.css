@@ -1,0 +1,93 @@
+/*Flex Box*/
+
+.flexbox {
+	width: 712px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.flexbox-settings { width: 100%; }
+
+.flexbox-settings div {
+	width: 320px;
+	font-size: 1.25rem;
+	font-family: 'Yeon Sung', cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.flexbox-settings option, 
+.flexbox-settings select {
+	width: 150px;
+}
+
+
+.flexbox-flex-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: flex-start;
+	background-color: #EEEEEE;
+	border: 1px solid #E0C2ED;
+	padding: 10px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.flex-square {
+	font-size: 1.25rem;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	color: #ffffff;
+}
+
+.flex-square:nth-child(1) {
+	width: 50px;
+	height: 50px;
+	background-color: #16193B;
+}
+
+.flex-square:nth-child(2) {
+	width: 60px;
+	height: 60px;
+	background-color: #35478C;
+}
+
+.flex-square:nth-child(3) {
+	width: 70px;
+	height: 70px;
+	background-color: #4E7AC7;
+}
+
+.flex-square:nth-child(4) {
+	width: 80px;
+	height: 80px;
+	background-color: #7FB2F0;
+}
+
+.flex-square:nth-child(5) {
+	width: 90px;
+	height: 90px;
+	background-color: #ADD5F7;
+}
+
+.flexbox-result {
+	width: 100%;
+	height: 132px;
+	margin-top: 20px;
+}
+
+.flexbox-result button { width: 15%; }
+
+
+
+

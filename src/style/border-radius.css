@@ -1,0 +1,73 @@
+
+/*Border-Radius Style*/
+
+.border-radius {
+	width:100%;
+	height: 454px;
+	display: flex;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	background-color: #ffffff;
+	border-radius: 20px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	-ms-border-radius: 20px;
+}
+
+.radius-settings {
+	width: 30%;
+	font-size: 1.1875rem;
+	font-family: 'Yeon Sung';
+	border-right: 4px solid #DDDDDD;
+	padding: 10px;
+}
+
+.radius-settings div {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.radius-settings label {
+	display: block;
+	margin: 10px 0;
+}
+
+.figure-container {
+	width: 525px;
+	height: 74%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.radius-figure {
+	width: 250px;
+	height: 250px;
+	border: 1px solid #000000;
+	background-color: #a649d1;
+	border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-moz-border-radius: 20px 20px 20px 20px;
+	-ms-border-radius: 20px 20px 20px 20px;
+}
+
+.radius-result-inner {
+	width: 525px;
+	height: 26%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.radius-result {
+	width: 90%;
+	height: 82%;
+	margin: 0 auto;
+}
+
+.radius-result button { width: 17%; }
+
+
+
+
+

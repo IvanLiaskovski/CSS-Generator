@@ -1,0 +1,47 @@
+/*Multiple columns*/
+
+.multiple-columns {
+	width: 712px;
+	height: 390px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.multiple-columns-settings {
+	width: 100%;
+}
+
+.multiple-columns-settings div {
+	width: 400px;
+	font-size: 1.5625rem;
+	font-family: 'Yeon Sung', cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.multiple-columns-text {
+	font-size: .9375rem;
+	font-family: "Roboto", sans-serif;
+	margin-top: 15px;
+}
+
+.multiple-columns-text p { max-width: 100%; }
+
+.multiple-columns-result {
+	width: 92%;
+	height: 132px;
+	margin-top: 20px;
+	position: relative;
+	overflow: hidden;
+}
+
+.multiple-columns-result button { 
+	width: 15%; 
+	position: absolute;
+	top: 0;
+	right: 0;
+}

@@ -1,0 +1,57 @@
+/*Text shadow*/
+
+.text-shadow {
+	width: 712px;
+	height: 290px;
+	background-color: #ffffff;
+	box-shadow: 0px 0px 7px 3px #AC55D4;
+	border-radius: 20px;
+	padding: 20px;
+}
+
+.text-shadow-inner {
+	height: 50%;
+	display: flex;
+	padding: 20px;
+}
+
+.text-shadow-settings { width: 100%; }
+
+.text-shadow-text {
+	width: 50%;
+	font-size: 2.8125rem;
+	font-weight: 600;
+	font-family: "Roboto", sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-option-container {
+	width: 400px;
+	font-size: 1.25rem;
+	font-family: 'Yeon Sung', cursive;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 10px;
+}
+
+.text-option-container div {
+	width: 200px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.text-shadow-result {
+	width: 92%;
+	height: 50px;
+	margin-top: 64px;
+}
+
+.text-shadow-result div {
+	display: flex;
+	align-items: center;
+}
+
+.text-shadow-result button { width: 10%; }

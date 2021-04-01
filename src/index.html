@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="style/main.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Yeon+Sung&display=swap">
+	<title>Css Generator</title>
+</head>
+
+<body>
+	<h1>CSS Generator</h1>
+	<div class="generator-container">
+		<div class="open-menu">
+			<h2 id="generator-title">Choose Something</h2>
+			<div class="browser-support">
+				<div class="browser-container">
+					<img src="image/chrome.svg" alt="Chrome">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/firefox.svg" alt="Firefox">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/safari.svg" alt="Safari">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/ie.svg" alt="IE">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/opera.svg" alt="Opera">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/android.svg" alt="Android">
+					<span class="browser-web"></span>
+				</div>
+				<div class="browser-container">
+					<img src="image/iphone.svg" alt="Iphone">
+					<span class="browser-web"></span>
+				</div>
+			</div>
+			<div class="menu-logo">
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="main-container">
+			<div class="menu">
+				<ul>
+					<li>
+						<button>Border Radius</button>
+					</li>
+					<li>
+						<button>Box Shadow</button>
+					</li>
+					<li>
+						<button>Text Shadow</button>
+					</li>
+					<li>
+						<button>RGBA</button>
+					</li>
+					<li>
+						<button>@Font Face</button>
+					</li>
+					<li>
+						<button>Multiple Columns</button>
+					</li>
+					<li>
+						<button>Box Resize</button>
+					</li>
+					<li>
+						<button>Box Sizing</button>
+					</li>
+					<li>
+						<button>Outline</button>
+					</li>
+					<li>
+						<button>Transition</button>
+					</li>
+					<li>
+						<button>Transform</button>
+					</li>
+					<li>
+						<button>Flexbox</button>
+					</li>
+				</ul>
+			</div>
+			<!--Border radius starts-->
+			<div class="border-radius open">
+				<form class="radius-settings">
+					<label for="#width-radius">Width</label>
+					<div>
+						<input type="range" id="width-radius" name="width-radius" value="250" min="1" max="450">
+						<span>250</span>
+					</div>
+					<label for="#height-radius">Height</label>
+					<div>
+						<input type="range" id="height-radius" name="height-radius" value="250" min="1" max="310">
+						<span>250</span>
+					</div>
+					<label for="#tlc-radius">Top left corner</label>
+					<div>
+						<input type="range" id="tlc-radius" name="tlc-radius" value="20" min="0" max="400">
+						<span>20</span>
+					</div>
+					<label for="#trc-radius">Top right corner</label>
+					<div>
+						<input type="range" id="trc-radius" name="trc-radius" value="20" min="0" max="400">
+						<span>20</span>
+					</div>
+					<label for="#blc-radius">Bottom left corner</label>
+					<div>
+						<input type="range" id="blc-radius" name="blc-radius" value="20" min="0" max="400">
+						<span>20</span>
+					</div>
+					<label for="#brc-radius">Bottom right corner</label>
+					<div>
+						<input type="range" id="brc-radius" name="brc-radius" value="20" min="0" max="400">
+						<span>20</span>
+					</div>
+				</form>
+				<div class="radius-container">
+					<div class="figure-container">
+						<div class="radius-figure"></div>
+					</div>
+					<div class="radius-result-inner">
+						<div class="result radius-result">
+							<div>
+								<pre></pre>
+							</div>
+							<button id="copy-radius">Copy</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--Box radius ends-->
+			<!--Box shadow starts-->
+			<div class="box-shadow open">
+				<form class="box-shadow-settings">
+					<div class="shadow-option">
+						<label for="#box-sh-inset">Inset</label>
+						<select id="box-sh-inset" name="box-sh-inset">
+							<option>No</option>
+							<option>Inset</option>
+						</select>
+					</div>
+					<div class="shadow-option">
+						<label for="#box-sh-hr">Horizontal Length:</label>
+						<div>
+							<input type="range" id="box-sh-hr" name="box-sh-hr" value="0" min="-200" max="300">
+							<span>0</span>
+						</div>
+					</div>
+					<div class="shadow-option">
+						<label for="#box-sh-vr">Vertical Length:</label>
+						<div>
+							<input type="range" id="box-sh-vr" name="box-sh-vr" value="0" min="-200" max="300">
+							<span>0</span>
+						</div>
+					</div>
+					<div class="shadow-option">
+						<label for="#box-sh-blur">Blur Radius:</label>
+						<div>
+							<input type="range" id="box-sh-blur" name="box-sh-blur" value="0" min="0" max="300">
+							<span>0</span>
+						</div>
+					</div>
+					<div class="shadow-option">
+						<label for="#box-sh-spread">Spread:</label>
+						<div>
+							<input type="range" id="box-sh-spread" name="box-sh-spread" value="0" min="0" min="0"
+								max="300">
+							<span>0</span>
+						</div>
+					</div>
+					<div class="shadow-option">
+						<label for="#box-sh-color">Color:</label>
+						<div>
+							<input class="jscolor {borderColor:'#000000',
+							insetColor:'#000000',
+							backgroundColor:'#AC55D4',
+							onFineChange: 'changeShadow()',
+							hash:true,
+							uppercase:false}" id="box-sh-color" name="box-sh-color" value="#B16CFF">
+						</div>
+					</div>
+				</form>
+				<div class="result box-shadow-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="copy-shadow">Copy</button>
+				</div>
+			</div>
+			<!--Box shadow ends-->
+			<!--Text shadow starts-->
+			<div class="text-shadow open">
+				<div class="text-shadow-inner">
+					<form class="text-shadow-settings">
+						<div class="text-option-container">
+							<label for="#text-shadow-hl">Horizontal Length:</label>
+							<div>
+								<input type="range" id="text-shadow-hl" name="text-shadow-hl" value="0" min="-75"
+									max="100">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="text-option-container">
+							<label for="#text-shadow-vl">Vertical Length:</label>
+							<div>
+								<input type="range" id="text-shadow-vl" name="text-shadow-vl" value="0" min="-75"
+									max="100">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="text-option-container">
+							<label for="#text-shadow-br">Blur Radius: </label>
+							<div>
+								<input type="range" id="text-shadow-br" name="text-shadow-br" value="0" min="0"
+									max="25">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="text-option-container">
+							<label for="#text-color">Color: </label>
+							<div>
+								<input class="jscolor {borderColor:'#000000',
+								insetColor:'#000000',
+								backgroundColor:'#AC55D4',
+								onFineChange: 'changeShadowText()',
+								hash:true,
+								uppercase:false}" id="text-color" name="text-color" value="000000">
+							</div>
+						</div>
+						<div class="text-option-container">
+							<label for="#shadow-text-color">Shadow Color: </label>
+							<div>
+								<input class="jscolor {borderColor:'#000000',
+								insetColor:'#000000',
+								backgroundColor:'#AC55D4',
+								onFineChange: 'changeShadowText()',
+								hash:true,
+								uppercase:false}" id="shadow-text-color" name="shadow-text-color" value="#B16CFF">
+							</div>
+						</div>
+					</form>
+					<div class="text-shadow-text">
+						<p>Your Text</p>
+					</div>
+				</div>
+				<div class="result text-shadow-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="text-shadow-copy">Copy</button>
+				</div>
+			</div>
+			<!--Text shadow ends-->
+			<!--Rgbs starts-->
+			<div class="rgba open">
+				<div class="rgba-container">
+					<form class="rgba-setting">
+						<div class="rgba-option-container">
+							<label for="#rgba-r">R:</label>
+							<div>
+								<input type="range" id="rgba-r" name="rgba-r" value="0" min="0" max="255">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="rgba-option-container">
+							<label for="#rgba-g">G:</label>
+							<div>
+								<input type="range" id="rgba-g" name="rgba-g" value="0" min="0" max="255">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="rgba-option-container">
+							<label for="#rgba-b">B:</label>
+							<div>
+								<input type="range" id="rgba-b" name="rgba-b" value="0" min="0" max="255">
+								<span>0</span>
+							</div>
+						</div>
+						<div class="rgba-option-container">
+							<label for="#rgba-a">Opacity:</label>
+							<div>
+								<input type="range" id="rgba-a" name="rgba-a" value="10" min="0" max="10">
+								<span>0</span>
+							</div>
+						</div>
+					</form>
+					<div class="rgba-figure-container">
+						<div class="rgba-figure"></div>
+					</div>
+				</div>
+				<div class="result rgba-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="rgba-copy">Copy</button>
+				</div>
+			</div>
+			<!--Rgba ends-->
+			<!--Font face starts-->
+			<div class="font-face open">
+				<form class="font-face-settings">
+					<div>
+						<label for="#font-family">Font Family:</label>
+						<input type="text" id="font-family" name="font-family">
+					</div>
+					<div>
+						<label for="#font-name">Font Name:</label>
+						<input type="text" id="font-name" name="font-name">
+					</div>
+				</form>
+				<div class="result font-face-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="font-face-copy">Copy</button>
+				</div>
+			</div>
+			<!--Font face ends-->
+			<!--Columns starts-->
+			<div class="multiple-columns open">
+				<form class="multiple-columns-settings">
+					<div>
+						<label for="#column-val"># of Columns:</label>
+						<input type="text" id="column-val" name="column-val">
+					</div>
+					<div>
+						<label for="#column-gap">Column Gap:</label>
+						<input type="text" id="column-gap" name="column-gap" placeholder="px">
+					</div>
+				</form>
+				<div class="multiple-columns-text">
+					<p>
+						Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+						the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley
+						of type and scrambled it to make a type specimen book. It has survived not only five centuries,
+						but also the leap into electronic typesetting, remaining essentially unchanged. It was
+						popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+						and more recently with desktop publishing software like Aldus PageMaker including versions of
+						Lorem Ipsum.
+					</p>
+				</div>
+				<div class="result multiple-columns-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="column-copy">Copy</button>
+				</div>
+			</div>
+			<!--Columns ends-->
+			<!--Box resize starts-->
+			<div class="box-resize open">
+				<form class="box-resize-settings">
+					<div>
+						<label for="#box-resize-val">Box Resize:</label>
+						<select id="box-resize-val">
+							<option></option>
+							<option>none</option>
+							<option>horizontal</option>
+							<option>vertical</option>
+							<option>both</option>
+						</select>
+					</div>
+				</form>
+				<div class="result box-resize-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="box-resize-copy">Copy</button>
+				</div>
+			</div>
+			<!--Box resize ends-->
+			<!--Box sizing starts-->
+			<div class="box-sizing open">
+				<form class="box-sizing-settings">
+					<div>
+						<label for="#box-sizing-val">Box Sizing:</label>
+						<select id="box-sizing-val">
+							<option></option>
+							<option>border-box</option>
+							<option>content-box</option>
+						</select>
+					</div>
+				</form>
+				<div class="result box-sizing-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="copy-sizing">Copy</button>
+				</div>
+			</div>
+			<!--Box sizing ends-->
+			<!--Outline starts-->
+			<div class="outline open">
+				<form class="outline-settings">
+					<div class="outline-option">
+						<label for="#outline-thickness">Outline Thickness:</label>
+						<div>
+							<input type="range" id="outline-thickness" name="outline-thickness" value="0" min="0"
+								max="200">
+							<span>0</span>
+						</div>
+					</div>
+					<div class="outline-option">
+						<label for="#outline-type">Outline:</label>
+						<div>
+							<select id="outline-type">
+								<option>Dotted</option>
+								<option>Dashed</option>
+								<option>Solid</option>
+								<option>Groove</option>
+								<option>Ridge</option>
+								<option>Inset</option>
+								<option>Outset</option>
+								<option>Double</option>
+								<option>Auto</option>
+							</select>
+						</div>
+					</div>
+					<div class="outline-option">
+						<label for="#outline-color">Outline Color:   </label>
+						<div>
+							<input class="jscolor {borderColor:'#000000',
+							insetColor:'#000000',
+							backgroundColor:'#AC55D4',
+							onFineChange: 'changeOutline()',
+							hash:true,
+							uppercase:false}" value="#B16CFF" id="outline-color" name="outline-color">
+						</div>
+					</div>
+					<div class="outline-option">
+						<label>Outline Offset:   </label>
+						<div>
+							<input type="range" id="outline-offset" name="outline-offset" value="0" min="0" max="200">
+							<span>0</span>
+						</div>
+					</div>
+				</form>
+				<div class="result outline-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="outline-copy">Copy</button>
+				</div>
+			</div>
+			<!--Outline ends-->
+			<!--Transition starts-->
+			<div class="transition open">
+				<div class="transition-container">
+					<form class="transition-setting">
+						<div>
+							<label for="#transition-property">Property:</label>
+							<select id="transition-property">
+								<option>All</option>
+								<option>Background</option>
+								<option>Color</option>
+								<option>Height</option>
+								<option>Width</option>
+								<option>Outline</option>
+							</select>
+						</div>
+						<div>
+							<label for="#transition-duration">Duration:</label>
+							<input type="text" id="transition-duration" name="transition-duration" value="0"
+								placeholder="Seconds">
+						</div>
+						<div>
+							<label for="#transition-function">Function:</label>
+							<select id="transition-function">
+								<option>Ease</option>
+								<option>Linear</option>
+								<option>Ease-In</option>
+								<option>Ease-Out</option>
+								<option>Ease-In-Out</option>
+							</select>
+						</div>
+					</form>
+					<div class="transition-hover-container">
+						<div class="transition-hover">
+							Hover over me
+						</div>
+					</div>
+				</div>
+				<div class="result transition-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="transition-copy">Copy</button>
+				</div>
+			</div>
+			<!--Transition ends-->
+			<!--Transform starts-->
+			<div class="transform open">
+				<div class="transform-container">
+					<form class="transform-settings">
+						<div>
+							<label for="#tr_scale">Scale:</label>
+							<input type="text" id="tr_scale" name="tr_scale">
+						</div>
+						<div>
+							<label for="#tr_rotate">Rotate:</label>
+							<input type="text" id="tr_rotate" name="tr_rotate" placeholder="deg">
+						</div>
+						<div>
+							<label for="#tr_translate_x">Translate:</label>
+							<input type="text" id="tr_translate_x" name="tr_translate_x" placeholder="px">
+							<input type="text" id="tr_translate_y" name="tr_translate_y" placeholder="px">
+						</div>
+						<div>
+							<label for="#tr_skew_x">Skew:    </label>
+							<input type="text" id="tr_skew_x" name="tr_skew_x" placeholder="deg">
+							<input type="text" id="tr_skew_y" name="tr_skew_y" placeholder="deg">
+						</div>
+					</form>
+					<div class="transform-figure-container">
+						<div class="transform-figure">
+							Watch me
+						</div>
+					</div>
+				</div>
+				<div class="result transform-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="transform-copy">Copy</button>
+				</div>
+			</div>
+			<!--Transform ends-->
+			<!--Flexbox starts-->
+			<div class="flexbox open">
+				<form class="flexbox-settings">
+					<div>
+						<label for="#flex-display">Flex Display:</label>
+						<select id="flex-display">
+							<option>Flex</option>
+							<option>Inline Flex</option>
+						</select>
+					</div>
+					<div>
+						<label for="#flex-diraction">Flex Direction:</label>
+						<select id="flex-diraction">
+							<option>Row</option>
+							<option>Row Reverse</option>
+							<option>Column</option>
+							<option>Column Reverse</option>
+						</select>
+					</div>
+					<div>
+						<label for="#flex-wrap">Flex Wrap:</label>
+						<select id="flex-wrap">
+							<option>Wrap</option>
+							<option>No Wrap</option>
+							<option>Wrap Reverse</option>
+						</select>
+					</div>
+					<div>
+						<label for="#justify-content">Justify Content:</label>
+						<select id="justify-content">
+							<option>Flex Start</option>
+							<option>Flex End</option>
+							<option>Center</option>
+							<option>Space Between</option>
+							<option>Space Around</option>
+						</select>
+					</div>
+					<div>
+						<label for="#align-items">Align Items:</label>
+						<select id="align-items">
+							<option>Flex Start</option>
+							<option>Flex End</option>
+							<option>Center</option>
+							<option>Baseline</option>
+							<option>Stretch</option>
+						</select>
+					</div>
+					<div>
+						<label for="#align-content">Align Content:</label>
+						<select id="align-content">
+							<option>Flex Start</option>
+							<option>Flex End</option>
+							<option>Center</option>
+							<option>Space Between</option>
+							<option>Space Around</option>
+							<option>Stretch</option>
+						</select>
+					</div>
+				</form>
+				<div class="flexbox-flex-container">
+					<div class="flex-square">1</div>
+					<div class="flex-square">2</div>
+					<div class="flex-square">3</div>
+					<div class="flex-square">4</div>
+					<div class="flex-square">5</div>
+				</div>
+				<div class="result flexbox-result">
+					<div>
+						<pre></pre>
+					</div>
+					<button id="flex-copy">Copy</button>
+				</div>
+			</div>
+			<!--Flexbo ends-->
+		</div>
+	</div>
+	<script src="js/jscolor.js"></script>
+	<script src="js/browserSupporting.js"></script>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
